@@ -6,9 +6,9 @@ const theme: Theme = {
     secondary: "#594ED2",
     black: "#1c1c1c",
     white: "#FFFFFF",
-    "gray-00": "#F0F0F0",
-    "gray-10": "#DFDFDF",
-    "gray-20": "#9E9E9E",
+    "gray_00": "#F0F0F0",
+    "gray_10": "#DFDFDF",
+    "gray_20": "#9E9E9E",
   },
   spacing: {
     xs: "4px",

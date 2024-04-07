@@ -4,9 +4,9 @@ type Theme = {
     secondary: string;
     black: string;
     white: string;
-    "gray-00": string;
-    "gray-10": string;
-    "gray-20": string;
+    "gray_00": string;
+    "gray_10": string;
+    "gray_20": string;
   };
   spacing: {
     xs: string;
