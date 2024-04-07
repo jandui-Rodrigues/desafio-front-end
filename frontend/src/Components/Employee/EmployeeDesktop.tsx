@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Employees from "../../Types/Employees";
 import convertDataIso from "../../utils/ConvertDate";
 import ConvertPhone from "../../utils/ConvertPhone";
+import { Td } from "../Table/Td.style";
+import { Tr } from "../Table/Tr.style";
 
 type EmployeeDesktopProps = {
   employee: Employees;
@@ -12,31 +14,17 @@ const Table = styled.table`
   border-spacing: 0;
 `;
 
-const Tr = styled.tr`
-  background-color: ${({ theme }) => theme.colors.white};
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.gray_10};
-`;
-
-const Td = styled.td`
-  flex: 1;
-  font-size:  1.25rem;
-  background: transparent;
-  padding: 0.5rem 3rem;
-  img {
-    border-radius: 50%;
-    width: ${({ theme }) => theme.spacing.xxl};
-  }
-`;
+const TrDesktop = styled(Tr)`
+border-bottom: 1px solid ${({ theme }) => theme.colors.gray_10};
+background-color: ${({ theme }) => theme.colors.white};
+    
+`
 
 function EmployeeDesktop({ employee }: EmployeeDesktopProps) {
   return (
     <Table>
       <tbody>
-        <Tr>
+        <TrDesktop>
           <Td>
             <img src={employee.image} alt={employee.name} />
           </Td>
@@ -44,7 +32,7 @@ function EmployeeDesktop({ employee }: EmployeeDesktopProps) {
           <Td>{employee.job}</Td>
           <Td>{convertDataIso(employee.admission_date)}</Td>
           <Td>{ConvertPhone(employee.phone)}</Td>
-        </Tr>
+        </TrDesktop>
       </tbody>
     </Table>
   );
