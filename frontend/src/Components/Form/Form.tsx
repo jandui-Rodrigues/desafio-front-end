@@ -8,7 +8,6 @@ import filterEmployees from "../../utils/FilterEmployees";
 const WrapperForm = styled.form`
   display: flex;
   background: #fff;
-  border: 1px solid ${({ theme }) => theme.colors.gray_10};
   border-radius: 100px;
 `;
 
