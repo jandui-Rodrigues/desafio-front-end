@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 const PORT = Number(port)
 
 // https://vitejs.dev/config/
