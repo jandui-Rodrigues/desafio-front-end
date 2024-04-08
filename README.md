@@ -2,6 +2,12 @@
 
 Este projeto é uma implementação da interface de visualização de uma tabela com dados de usuários, utilizando React.js, TypeScript, Vite, styled-components, JSON Server e Context API. O objetivo é demonstrar habilidades de desenvolvimento front-end, incluindo:
 
+<img src="/assets/imgs/Desktop.png">
+
+<img src="/assets/imgs/Mobile.png"> 
+
+
+
 ### Lógica de programação:
 
 - Filtragem de usuários por nome, cargo e telefone.
