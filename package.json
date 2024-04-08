@@ -1,0 +1,12 @@
+{
+  "name": "desafio-front-end",
+  "version": "1.0.0",
+  "description": "Este projeto é uma implementação da interface de visualização de uma tabela com dados de usuários, utilizando React.js, TypeScript, Vite, styled-components, JSON Server e Context API. O objetivo é demonstrar habilidades de desenvolvimento front-end, incluindo:",
+  "main": "index.js",
+  "scripts": {
+    "start:front": "cd frontend && npm run dev",
+    "start:back": "cd frontend && npm run backend"
+  },
+  "author": "",
+  "license": "ISC"
+}
