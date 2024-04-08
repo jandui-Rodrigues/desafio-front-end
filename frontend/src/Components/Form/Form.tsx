@@ -3,7 +3,6 @@ import Button from "./Button";
 import Input from "./Input";
 import styled from "styled-components";
 import { EmployeesContext } from "../../context/Employees.context";
-import filterEmployees from "../../utils/FilterEmployees";
 
 const WrapperForm = styled.form`
   display: flex;
@@ -12,14 +11,15 @@ const WrapperForm = styled.form`
 `;
 
 function Form() {
-  const { employees, setFilteredEmployees } = useContext(EmployeesContext);
+  const { employeeFilter, setFilteredEmployees } = useContext(EmployeesContext);
   let valueInputShearch = "";
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     valueInputShearch = e.target.value;
   };
   const handle = () => {
-    const newEmployees = filterEmployees(valueInputShearch, employees)
-    setFilteredEmployees(newEmployees);
+    const employee = employeeFilter(valueInputShearch);
+    setFilteredEmployees(employee);
+
   };
   return (
     <WrapperForm>
