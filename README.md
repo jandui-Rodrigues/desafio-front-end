@@ -1,10 +1,12 @@
 # Sobre o Projeto:
 
 Este projeto é uma implementação da interface de visualização de uma tabela com dados de usuários, utilizando React.js, TypeScript, Vite, styled-components, JSON Server e Context API. O objetivo é demonstrar habilidades de desenvolvimento front-end, incluindo:
-
-<img src="/assets/imgs/Desktop.png">
-
-<img src="/assets/imgs/Mobile.png"> 
+<br>
+### Responsovidades Desktop é Mobile
+<div> 
+  <img  aling="start" src="/assets/imgs/Desktop.png">
+  <img aling="center" src="/assets/imgs/Mobile.png"> 
+</div>
 
 
 
